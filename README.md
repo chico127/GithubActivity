@@ -1,7 +1,5 @@
 # 🐙 GitHub Activity CLI (events → human summary)
 
-project was build according to https://roadmap.sh/projects/github-user-activity specifications
-
 A tiny Python CLI that:
 1) Fetches a user’s recent GitHub events from  
    `https://api.github.com/users/<username>/events`
@@ -106,4 +104,8 @@ Paste it into the prompt when asked.
 - **No pagination**: only summarizes the first page of events returned by the API.
 - **Public events only**: private actions aren’t included by this endpoint.
 - **No per-file breakdown**: possible for `PushEvent` with extra requests to each commit URL.
+
+## Acknowledgment 
+
+This project was build according to https://roadmap.sh/projects/github-user-activity specifications
 
