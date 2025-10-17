@@ -4,12 +4,22 @@ from collections import defaultdict
 username = input("Enter GitHub username: ")
 url = f"https://api.github.com/users/{username}/events"
 
+# Optionally: you can hardcode your GitHub token here
+# so you don't have to input it every time.
+
+# token = "ghp_your_personal_access_token_here"
+
+# # (Be careful not to share or upload your token publicly!)
+# If you use the hardwire token, comment the token input below.
+
 token = input("Enter GitHub token (or enter for no token): ")
+
 if token == "":
     response = requests.get(url)
 else:
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
+
 
 status_messages = {
     200: "✅ OK — The request succeeded.",
