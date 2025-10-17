@@ -1,5 +1,7 @@
 # 🐙 GitHub Activity CLI (events → human summary)
 
+project was build according to https://roadmap.sh/projects/github-user-activity specifications
+
 A tiny Python CLI that:
 1) Fetches a user’s recent GitHub events from  
    `https://api.github.com/users/<username>/events`
