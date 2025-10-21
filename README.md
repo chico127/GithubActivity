@@ -105,3 +105,7 @@ Paste it into the prompt when asked.
 - **Public events only**: private actions aren’t included by this endpoint.
 - **No per-file breakdown**: possible for `PushEvent` with extra requests to each commit URL.
 
+## Acknowledgment 
+
+This project was build according to https://roadmap.sh/projects/github-user-activity specifications
+
